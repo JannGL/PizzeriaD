@@ -28,11 +28,11 @@
 </p>
     </ion-card-content>
   </ion-card>
-  <ion-list *ngIf="dish" color="theme_color">
+  <ion-list *ngIf="dish" color="dark">
   	<ion-list-header>
   		<h2>Commnets</h2>
   	</ion-list-header>
-  	<ion-item *ngFor="let comment of dish.comments" color="background_color">
+  	<ion-item *ngFor="let comment of dish.comments" color="light">
     {{comment.author}}-{{comment.date}}
 
     <h4>{{comment.comment}}</h4>

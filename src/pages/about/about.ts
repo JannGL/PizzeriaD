@@ -16,6 +16,7 @@ import { Leader } from '../../shared/leader';
 })
 export class AboutPage {
 
+
 leaders:Leader[];
 
 
