@@ -26,11 +26,15 @@ export class HomePage implements OnInit {
   	private leaderService: LeaderProvider,
   	private promotionService: PromotionProvider,
   	@Inject('DbURL') private DbURL
-  	){}
+  	){
+
+
+
+    }
 
 ngOnInit(){
   this.getFeaturedDish();
-  //this.getFeaturedPromotion();
+  this.getFeaturedPromotion();
 
   this.getFeaturedLeader();
 
@@ -39,14 +43,19 @@ ngOnInit(){
 
 
 getFeaturedDish(){
+
       this.dishService
       .getFeaturedDish()
       .subscribe(
         response=>{
           this.dish=response[0];
           console.log(this.dish);
-        });
+        }
+        
+        );
     }
+
+
 
 getFeaturedPromotion(){
 this.promotionService
