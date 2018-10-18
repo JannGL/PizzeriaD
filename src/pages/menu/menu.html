@@ -16,9 +16,48 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="card-background-page">
 
+    <ion-card>
+      
+        <img src="../../assets/imgs/pizzacat.png">
+        <h3 text-left><span ion-text color="primary">Pizza cat</span></h3>
+        <h3 text-left><span ion-text color="primary">$5 </span></h3>
+       
+        </ion-card>
 
+        <ion-card>
+      
+            <img src="../../assets/imgs/donacat.jpg">
+            <h3 text-left><span ion-text color="primary">Catdo</span></h3>
+            <h3 text-left><span ion-text color="primary">$2 </span></h3>
+
+           
+            </ion-card>
+
+            <ion-card>
+      
+                <img src="../../assets/imgs/sushicat.jpg">
+                <h3 text-left><span ion-text color="primary">Sushi </span></h3>
+                <h3 text-left><span ion-text color="primary">$8 </span></h3>
+               
+                </ion-card>
+
+                <ion-card>
+      
+                    <img src="../../assets/imgs/dumplings.jpg">
+                    <h3 text-left><span ion-text color="primary">steam love</span></h3>
+                    <h3 text-left><span ion-text color="primary">$12 </span></h3>
+                   
+                    </ion-card>
+
+                    <ion-card>
+      
+                        <img src="../../assets/imgs/catcoffe.png">
+                        <h3 text-left><span ion-text color="primary">cafe au lait</span></h3>
+                        <h3 text-left><span ion-text color="primary">$3 </span></h3>
+                       
+                        </ion-card>
 	<ion-card *ngFor="let dish of dishes"(click)="dishDetail($event, dish)">
     <img src="{{'http://localhost:3000/'+ dish.image}}"  />
     <ion-card-content>
