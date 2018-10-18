@@ -26,6 +26,8 @@ leaders:Leader[];
     console.log('ionViewDidLoad AboutPage');
   }
 
+
+
   ngOnInit(){
  
 
